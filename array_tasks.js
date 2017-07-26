@@ -42,14 +42,15 @@ var arrayTasks = {
 		return result;
 	},
 
-	// removeAndClone: function (arr, valueToRemove) {
-	// 	var length = arr.length;
-	// 	for(var j=length-1; j>=0; j--){
-	// 		if(arr[j] === valueToRemove ){
-	//
-	// 		}
-	// 	}
-	// },
+	removeAndClone: function (arr, valueToRemove) {
+		var length = arr.length;
+		for(var j=length-1; j>=0; j--){
+			if(arr[j] === valueToRemove ){
+				arr.splice(j, 1);
+			}
+		}
+		return arr;
+	},
 
 	// findIndexesOf: function (arr, itemToFind) {
 
