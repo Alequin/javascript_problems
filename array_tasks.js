@@ -62,9 +62,18 @@ var arrayTasks = {
 		return result;
 	},
 
-	// sumOfAllEvenNumbersSquared: function (arr) {
+	sumOfAllEvenNumbersSquared: function (arr) {
 
-	// }
+		var result = arr.reduce(function(total, num){
+			if(num % 2 == 0){
+				return total + (num*num);
+			}else{
+				return total;
+			}
+		}, 0);
+		
+		return result;
+	}
 
 }
 
