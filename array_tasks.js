@@ -20,9 +20,13 @@ var arrayTasks = {
 		return result;
 	},
 
-	// sum: function (arr) {
+	sum: function (arr) {
+		var result = arr.reduce(function(sum, num){
+			return sum + num;
+		}, 0);
 
-	// },
+		return result;
+	},
 
 	// findDuplicates: function (arr) {
 
