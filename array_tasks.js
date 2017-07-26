@@ -34,7 +34,7 @@ var arrayTasks = {
 
 		for(var j=0; j<arr.length; j++){
 			for(var k=j+1; k<arr.length; k++){
-				if(result.indexOf(arr[j]) == -1 && arr[j] === arr[k]){
+				if(!result.includes(arr[j]) && arr[j] === arr[k]){
 					result.push(arr[j]);
 				}
 			}
