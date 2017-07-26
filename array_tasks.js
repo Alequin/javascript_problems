@@ -12,9 +12,13 @@ var arrayTasks = {
 		return front.concat(end);
 	},
 
-	// square: function (arr) {
+	square: function (arr) {
+		var result = arr.map(function(num){
+			return num*num;
+		});
 
-	// },
+		return result;
+	},
 
 	// sum: function (arr) {
 
